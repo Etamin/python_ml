@@ -57,20 +57,16 @@ def classfy(vec2classfy,p0Vec,p1Vec,pClass1):
 
 def spamtest():
     #jieba.enable_parallel(4)
-
-    data = []
-    for item in reader:
-        data.append(item)
     fullTest = []
     docList = []
     classList = []
     print "start"
     for i in range(1, 41):  # it only 40 doc in every class
-        wordList = textParse(open('CX/%d.txt' % i).read())
+        wordList = textParse(open('normal/%d.txt' % i).read())
         docList.append(wordList)
         fullTest.extend(wordList)
         classList.append(1)
-        wordList = textParse(open('FCX/%d.txt' % i).read())
+        wordList = textParse(open('spam/%d.txt' % i).read())
         docList.append(wordList)
         fullTest.extend(wordList)
         classList.append(0)
