@@ -1,7 +1,7 @@
 #coding:utf-8
 
 from sklearn import datasets
-from sklearn.cross_validation import train_test_split  #ready to remove
+from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 import numpy as np
 
