@@ -6,4 +6,4 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=lo
 sentences = word2vec.Text8Corpus('text8')
 model = word2vec.Word2Vec(sentences, size=200)
 
-print(model.similarity('dogs','sleep'))
+print(model.similarity('windows','dektop'))
