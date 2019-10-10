@@ -4,7 +4,7 @@ from sklearn import neighbors
 import sklearn
 
 iris = load_iris()
-print iris
+print(iris)
 
 knn = neighbors.KNeighborsClassifier()
 knn.fit(iris.data, iris.target)
